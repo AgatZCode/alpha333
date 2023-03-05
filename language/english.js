@@ -26,7 +26,7 @@ exports.profile = (username, m, about, pasangan, PhoneNumber, exp, min, xp, math
 📊 Limit: ${limit}
 ®️ Registered: ${registered ? '✅ (' + tanggal_(regTime) + ')': '❌'}
 ⛽ Premium: ${premium ? `✅\n⏰ Expired Premium : msToDate(premiumDate - now)` : '❌'}
-🛄 Last claim: ${lastclaim > 0 ? tanggal_(lastclaim) : ''}`
+🛄 Last claim: ${lastclaim > 0 ? + tanggal_(lastclaim) : ''}`
 	}
 
 exports.needReg = (a, b, c) =>{
@@ -290,31 +290,31 @@ exports.OffNsfw = () => {
     return `The nsfw feature has not been activated`
 }
 exports.CoverBanLol = (prefix, command) => {
-    return `Example : ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`
+    return `Example : ${prefix + command} nama|heroes\nUsage: ${prefix + command} agat|jinx7`
 }
 exports.coverbannerlol = (style) => {
     return `*The Heroes You Entered are Wrong*\n\n_Here's the list of true heroes, Total_ *${style}* _heroes_\n\n`
 }
 exports.pubglogomaker = (prefix, command) => {
-    return `Example : ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`
+    return `Example : ${prefix + command} nama|style\nUsage: ${prefix + command} agat|women`
 }
 exports.pubglogomaker_ = (style) => {
     return `*The style you entered is wrong*\n\n_Here's a list of the correct styles, Total_ *${style}* _style_\n\n`
 }
 exports.colorfulpubg = (prefix, command) => {
-    return `Example : ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`
+    return `Example : ${prefix + command} nama|color\nUsage: ${prefix + command} agat|gold`
 }
 exports.colorfulpubg_ = (style) => {
     return `*The color you entered is wrong*\n\n_Here's a list of the correct colors, Total_ *${style}* _color_\n\n`
 }
 exports.astronotspace = (prefix, command) => {
-    return `Example: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`
+    return `Example: ${prefix + command} nama|style\nUsage: ${prefix + command} agat|anubis`
 }
 exports.wallpaperaov = (prefix, command) => {
-    return `Example: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`
+    return `Example: ${prefix + command} nama|heroes\nUsage: ${prefix + command} agat|allain`
 }
 exports.maketeamlogo = (style, style2, prefix, command) => {
-    return `Example: ${prefix + command} nama|${style}\nUsage: ${prefix + command} zeeone|${style2}`
+    return `Example: ${prefix + command} nama|${style}\nUsage: ${prefix + command} agat|${style2}`
 }
 
 exports.MaketeamlogoT = (a, b, c, d, e, f, g, h) => {
@@ -424,7 +424,7 @@ exports.TbJail = (prefix, command) => {
     return `Send/Reply Photo/Sticker With Caption ${prefix + command}`
 }
 exports.TbRepo = (prefix, command) => {
-    return `Send command ${prefix + command} *user* *repo* *branch*\n\nExp. ${prefix + command} *zeeone-ofc* *Alphabot-Md* *v12*`
+    return `Send command ${prefix + command} *user* *repo* *branch*\n\nExp. ${prefix + command} *agat-ofc* *AgatZBOT* *1*`
 }
 exports.StalkIg = () => {
     return `Enter username`
@@ -864,7 +864,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ !koboy
 │○ !kerja
 │○ !kandang
-│○ !levelup
 │○ !judi
 │○ !inventory
 │○ !hourly
@@ -988,8 +987,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ !tomp3 [video]
 │○ !tovn [video]
 │○ !stiker [reply image]
-│○ !tourl [image/video]
-│○ !ssweb [url]
+│○ !tourl [image/video/stiker]
 │○ !togif [sticker]
 │○ !tomp4 [sticker]
 ╰❒${prefix}toimg [reply sticker]
@@ -1790,7 +1788,7 @@ exports.rules = (prefix) => {
 ➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan.
 
 🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini bisa kalian dapatkan di YouTube ZEEONE OFC
+➡️ Script ini bisa kalian dapatkan di YouTube GrowdsAD
 
 🗯️ Boleh saya menambah ke grup?
 ➡️ Untuk itu tergantung dari owner bot sendiri
@@ -1822,7 +1820,7 @@ exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://s.id/YouTube-Zeeoneofc
+Recode : https://s.id/YouTube-GrowdsAD
 `
 }
 exports.tos = (ownernomer) => {
@@ -2026,7 +2024,6 @@ exports.converter = (prefix) =>{
 │○ !tovn [video]
 │○ !stiker [reply image]
 │○ !tourl [image/video]
-│○ !ssweb [url]
 │○ !togif [sticker]
 │○ !tomp4 [sticker]
 ╰❒${prefix}toimg [reply sticker]
@@ -2857,7 +2854,6 @@ exports.rpgmenu = (prefix) =>{
 │○ !koboy
 │○ !kerja
 │○ !kandang
-│○ !levelup
 │○ !judi
 │○ !inventory
 │○ !hourly
